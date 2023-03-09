@@ -12,8 +12,8 @@ metadata:
   namespace: syahmed-tenant
 spec:
   ports:
-  - port: 3001
-    targetPort: 3001
+  - port: 9000
+    targetPort: 9000
   selector:
     app.kubernetes.io/instance: devfile-sample-7ehb
 status:

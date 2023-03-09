@@ -34,6 +34,7 @@ spec:
         - containerPort: 3001
           name: http
           protocol: TCP
+        - containerPort: 9000
         resources:
           limits:
             cpu: 100m
