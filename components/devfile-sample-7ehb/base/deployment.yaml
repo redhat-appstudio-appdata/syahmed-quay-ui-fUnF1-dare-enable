@@ -25,7 +25,10 @@ spec:
         app.kubernetes.io/instance: devfile-sample-7ehb
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload@sha256:f1a0c44be77a84f09320d026f1a84e647b17878be0239bf2e8c2a7c79c8648cc
+      - env:
+        - name: MOCK_API
+          value: "true"
+        image: quay.io/redhat-appstudio/user-workload@sha256:f1a0c44be77a84f09320d026f1a84e647b17878be0239bf2e8c2a7c79c8648cc
         name: my-nodejs
         ports:
         - containerPort: 3001
