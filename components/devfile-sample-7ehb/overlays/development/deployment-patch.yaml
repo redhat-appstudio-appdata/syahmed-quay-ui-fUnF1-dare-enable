@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-7ehb
+  namespace: syahmed-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:f1a0c44be77a84f09320d026f1a84e647b17878be0239bf2e8c2a7c79c8648cc
+        name: my-nodejs
+        resources: {}
+status: {}
