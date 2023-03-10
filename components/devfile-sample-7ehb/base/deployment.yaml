@@ -28,7 +28,7 @@ spec:
       - env:
         - name: MOCK_API
           value: "true"
-        image: quay.io/redhat-appstudio/user-workload@sha256:0f1e85f17b5f7bb42cf80357c725fa5d80e6f0128bab7e5a86d950439a4c493c
+        image: quay.io/redhat-appstudio/user-workload@sha256:4113baf696ec51594da8081fd41e4890e56b60e171e8d4db14d2a2b9ab0ea088
         name: my-nodejs
         ports:
         - containerPort: 3001
